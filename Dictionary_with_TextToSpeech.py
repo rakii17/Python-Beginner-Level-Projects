@@ -26,11 +26,13 @@ words1 = {
 
 
 word = input("Enter the word you want to know the Kannada meaning : ")
-# word1 = input("Enter the word you want to know the English meaning : ")
+# word = input("Enter the word you want to know the English meaning : ")
 
 print(words.get(word))
-# print(words.get(word1)) #For English Meaning
+# print(words1.get(word)) #For English Meaning
 
 engine = pyttsx3.init()
+
 engine.say(words.get(word))
+# engine.say(words1.get(word))
 engine.runAndWait()
